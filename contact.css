@@ -1,0 +1,84 @@
+.contact-pg {
+  min-height: 100%;
+  background-image: url(./slike/fest.jpg);
+  background-size: cover;
+  height: 110vh;
+}
+.head h1 {
+    margin-left: 10px;
+}
+.head img {
+    animation: phone 3s infinite linear;
+}
+@keyframes phone {
+    0% {rotate: 0deg;}
+    50% {rotate: 30deg;}
+    100%  {rotate: 0eg;}
+}
+.contact-form {
+  position: relative;
+  background-color: rgba(10, 1, 14, 0.7);
+  box-shadow: 2px 5px 5px 2px black;
+  width: 50%;
+  height: 75%;
+  left: 25%;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  animation: contact 1.5s ease-in-out;
+  -o-animation-fill-mode: forwards;
+  animation-delay: .5s;
+}
+@keyframes contact{
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 100%;
+      transform: scale(1);
+    }
+  }
+
+.contact-form select{
+  color: purple;
+  background-color: black;
+  height: 25px;
+  width: 50%;
+}
+.contact-form input{
+  color: purple;
+  background-color: black;
+  height: 25px;
+  width: 50%;
+}
+#button {
+  text-decoration: none;
+  color: #fff;
+  height: 35px;
+  align-items: center;
+  text-align: center;
+  display: grid;
+  width: 15%;
+  background-image: linear-gradient(
+    to right,
+    #8f29d3 0%,
+    #c177e4 51%,
+    #4146cf 100%
+  );
+  border-radius: 10px;
+  background-size: 150% auto;
+  font-size: 1.25rem;
+  left: 40%;
+  position: relative;
+  margin-top: 10px;
+  transition: 0.3s ease;
+}
+#button:hover {
+    background-position: right  center;
+}
+.contact-pg .footer  {
+    top: 105%;
+}

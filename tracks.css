@@ -1,0 +1,89 @@
+.tracks-section {
+  min-height: 100vh;
+  background-image: url(slike/fest.jpg);
+  background-size: cover;
+  height: 330vh;
+}
+.head img {
+  animation: cd 5s infinite linear;
+}
+@keyframes cd {
+  0% {rotate: 0deg;}
+  50% {rotate: 360deg;}
+  100%{rotate: -360deg;}
+}
+#h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #ddd;
+  text-align: center;
+  font-size: 2.50rem;
+  border-bottom: 5px solid #0000005a;
+}
+.t2023 {
+  display: flex;
+  margin-left: 10px;
+}
+.t2022 {
+  display: flex;
+  margin-left: 10px;
+}
+.t2022-2 {
+  display: flex;
+  margin-left: 10px;
+}
+.t2021 {
+  display: flex;
+  margin-left: 10px;
+}
+.t2021-2 {
+  display: flex;
+  margin-left: 10px;
+}
+.tracks {
+  background-color: #fff;
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 20px;
+  box-shadow: 2px 5px 5px 2px black;
+  margin-bottom: 25px;
+  width: 300px;
+  height: 350px;
+  animation: tracks 1.5s ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: .5s;
+  transform: scale(0);
+}
+@keyframes tracks {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 100%;
+    transform: scale(1);
+  }
+  
+}
+.tracks img {
+  width: 300px;
+  height: 250px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.tracks h2 {
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.tracks audio {
+  position: absolute;
+  top: 88%;
+  height: 10%;
+}
+.tracks-section .footer {
+  top: 325%;
+}

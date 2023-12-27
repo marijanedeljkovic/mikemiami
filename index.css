@@ -1,0 +1,166 @@
+.main-section {
+  background-image: url(./slike/DSC_7217.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  animation-name: back;
+  animation-duration: 3s;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+}
+@keyframes back {
+  0% {
+    filter: grayscale(100%);
+  }
+  25% {
+    filter: grayscale(75%);
+  }
+  50% {
+    filter: grayscale(50%);
+  }
+  75% {
+    filter: grayscale(25%);
+  }
+  100% {
+    filter: grayscale(0%);
+  }
+}
+
+.abt h1 {
+  color: #fff;
+  font-size: 2rem;
+  margin-left: 5px;
+}
+.abt p {
+  color: #ddd;
+  font-size: 1.75rem;
+  margin-left: 5px;
+}
+.abt {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  margin-right: 15%;
+  background-color: rgba(10, 1, 14, 0.6);
+  border-radius: 10px;
+  transform: scale(0);
+  animation: abt 1.7s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+@keyframes abt {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 100%;
+    transform: scale(1);
+  }
+}
+.songs-menu {
+  min-height: 100vh;
+  background-image: url(slike/fest.jpg);
+  background-size: cover;
+  background-color: none;
+  position: relative;
+}
+#menuh1 {
+  text-align: center;
+  font-size: 2.25rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  background-color: rgba(10, 1, 14, 0.7);
+}
+.songs-nav {
+  display: flex;
+  min-height: 100vh;
+}
+.song img {
+  width: 150px;
+  margin-top: 5px;
+  margin-left: 5px;
+  border-radius: 10px;
+}
+.song {
+  background-color: rgba(10, 1, 14, 0.7);
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 5px 5px 2px black;
+}
+.song h1 {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 0;
+  left: 35%;
+  color: white;
+}
+.song .song-ul {
+  position: absolute;
+  top: 32%;
+  left: 33%;
+}
+.song-ul li {
+  font-size: 0.9rem;
+  color: white;
+}
+.song audio {
+  margin-right: 5px;
+}
+.songs-nav {
+  background-color: rgba(0, 0, 0, 0);
+}
+.songs-nav :nth-child(1) {
+  transform: scale(0);
+  animation: song1 1.25s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0.25s;
+}
+.songs-nav :nth-child(2) {
+  transform: scale(0);
+  animation: song2 1.25s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+.songs-nav :nth-child(3) {
+  transform: scale(0);
+  animation: song2 1.25s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0.75s;
+}
+
+@keyframes song1 {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 100%;
+    transform: scale(1);
+  }
+}
+@keyframes song2 {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 100%;
+    transform: scale(1);
+  }
+}
+@keyframes song3 {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 100%;
+    transform: scale(1);
+  }
+}
+
+
